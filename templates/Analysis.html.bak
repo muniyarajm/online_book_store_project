@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Books</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styleform.css')}}">
+			<style>
+			table, th, td {
+			  border: 1px solid black;
+			  text-align:center;
+			  border-collapse:collapse;
+			}
+			th {
+			  padding: 10px;
+			}
+		</style>
+	</head>
+	<body id="reg">
+		<div id="header"><h1 id="headh1">ONLINE BOOK STORE</h1></div>
+		<div id="nav">
+			<ul id="navul">	
+				<li><a href="\login">LogOut</a><li>
+			</ul>
+		</div>
+		<div><h1 style="text-align:center">Sales Report</h1></div>
+		<div>
+			<table style="width:100%">
+				<tr>
+					<th style="width:10%">BookID</th>
+					<th style="width:40%">BookName</th>
+					<th style="width:40%">AuthorName</th>
+					<th style="width:10%">SalesCount</th>
+				</tr>
+				{% for data in ansdata %}
+					<tr>
+						<td>{{data[0]}}</td>
+						<td>{{data[1]}}</td>
+						<td>{{data[2]}}</td>
+						<td>{{data[3]}}</td>
+					</tr>
+				{% endfor %}
+			</table>
+		<div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styleform.css')}}">
+	</head>
+	<body id ="reg">
+		<div id="header"><h1 id="headh1">ONLINE BOOK STORE</h1></div>
+		<div id="nav">
+			<div>
+			<image src="{{url_for('static',filename='images/f.png')}}" height="500px" width="500px">
+			</div>
+		</div>
+		<form action="\Analysis" method="POST">
+			<table>
+			<tr>	
+				<th><label>Username</label><th>
+				<td><input type="text" name="uname"><td>
+			</tr>
+			<tr>	
+				<th><label>Password</label><th>
+				<td><input type="password" name="pass"><td>
+			</tr>
+			<tr>	
+				<th><input type="submit" value="LOGIN" style="cursor:pointer" ><th>
+			</tr>
+			</table>
+			<div>
+				<p style="text-align:center;color:red">{{alert1}}</p>
+			</div>
+		</form>
+	</body>
+</html>

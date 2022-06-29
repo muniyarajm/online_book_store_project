@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Books</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styleform.css')}}">
+			<style>
+			table, th, td {
+			  border: 1px solid black;
+			  text-align:center;
+			  border-collapse:collapse;
+			}
+			th {
+			  padding: 10px;
+			}
+		</style>
+	</head>
+	<body id="reg">
+		<div id="header"><h1 id="headh1">ONLINE BOOK STORE</h1></div>
+		<div id="nav">
+			<ul id="navul">	
+				<li><a href="#" style="color:black">{{udata}}</a><li>
+				<li><a href="\profile">My Profile</a><li>
+				<li><a href="\login">LogOut</a><li>
+			</ul>
+		</div>
+		<p style="font-weight:italic">*Click the bookName to order the book </p>
+		<table style="width:100%">
+			<tr>
+				<th style="width:10%">BookID</th>
+				<th style="width:30%">BookName</th>
+				<th style="width:30%">AuthorName</th>
+				<th style="width:30%">Price</th>
+			</tr>
+			{% for data in bdata %}
+				<tr>
+					<td>{{data[0]}}</td>
+					<td><a href="{{url_for('orders',id=data[0])}}" id="ord">{{data[1]}}</a></td>
+					<td>{{data[2]}}</td>
+					<td>{{data[3]}}</td>
+				</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>

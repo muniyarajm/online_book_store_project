@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{{datas[1]}}{{datas[2]}}</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styleform.css')}}">
+		<style>
+			table, th, td {
+			  border: 1px solid black;
+			  text-align:center;
+			  border-collapse:collapse;
+			}
+		</style>
+	</head>
+	<body id="reg">
+		<div id="header"><h1 id="headh1">ONLINE BOOK STORE</h1></div>
+		<div id="nav">
+			<ul id="navul">
+				<li><a href="\books">Books</a><li>
+				<li><a href="#">About us</a><li>
+				<li><a href="\">LogOut</a><li>
+			</ul>
+		</div>
+		<div class="div">
+				<table style="width:50%">
+					<tr>
+						<th colspan="2">Personal information</th>
+					</tr>
+					<tr>
+						<th>Name</th>
+						<td>{{datas[1]}}{{datas[2]}}</td>
+					</tr>
+					<tr>
+						<th>Email/username</th>
+						<td>{{datas[3]}}</td>
+					</tr>
+					<tr>
+						<th>PhoneNumber</th>
+						<td>{{datas[4]}}</td>
+					</tr>
+					<tr>
+						<th>Street</th>
+						<td>{{datas[5]}}</td>
+					</tr>
+					<tr>
+						<th>PostalCode</th>
+						<td>{{datas[6]}}</td>
+					</tr>
+					<tr>
+						<th>Country</th>
+						<td>{{datas[7]}}</td>
+					</tr>
+				</table>
+		</div>
+		<br>
+		<div>
+			<table style="width:50%">
+					<tr>
+						<th colspan="5">Order information</th>
+					</tr>
+					<tr>
+						<th>OrderId</th>
+						<th>BookId</th>
+						<th>BookName</th>
+						<th>OrderDate</th>
+						<th>Price</th>
+					</tr>
+					{% for data in datas1 %}
+						<tr>
+							<td>{{data[0]}}</td>
+							<td>{{data[1]}}</td>
+							<td>{{data[2]}}</td>
+							<td>{{data[3]}}</td>
+							<td>{{data[4]}}</td>
+						</tr>
+					{% endfor %}
+				</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Registor</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styleform.css')}}">
+	</head>
+	<body id="reg">
+		<div id="header"><h1 id="headh1">ONLINE BOOK STORE</h1></div>
+		<div id="nav">
+			<ul id="navul">
+				<li><a href="\">Home</a><li>
+				<li><a href="\login">Login</a><li>
+				<li><a href="\register">Registor</a><li>
+				<li><a href="#">About us</a><li>
+			</ul>
+			<div>
+			<image src="{{url_for('static',filename='images/f.png')}}" height="500px" width="500px">
+			</div>
+		</div>
+		<form action="\register" method="POST">
+			<table>
+			<tr>
+				<th><label>FirstName</label><th>
+				<td><input type="text" name="fname"><td>
+			</tr>
+			<tr>	
+				<th><label>LastName</label><th>
+				<td><input type="text" name="lname"><td>
+			</tr>
+			<tr>	
+				<th><label>E-mail</label><th>
+				<td><input type="email" name="mailid"><td>
+			</tr>
+			<tr>	
+				<th><label>Password</label><th>
+				<td><input type="password" name="pass"><td>
+			</tr>
+			<tr>
+				<th><label>PhoneNumber</label><th>
+				<td><input type="text" name="Pnmber"><td>
+			</tr>
+			<tr>	
+				<th><label>StreetName</label><th>
+				<td><input type="text" name="sname"><td>
+			</tr>
+			<tr>	
+				<th><label>PostalCode</label><th>
+				<td><input type="text" name="pcode"><td>
+			</tr>
+			<tr>	
+				<th><label>Country</label><th>
+				<td><input type="text" name="country"><td>
+			</tr>
+			<tr>	
+				<th><input type="submit" value="Register" ><th>
+			</tr>
+			</table>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+table{
+ margin-left:auto;
+ margin-right:auto;
+}
+th{
+	height:30px;
+	color:white;
+}
+.div{
+ display:flex;
+ flex-direction:row;
+}
+.div1{
+	background-color:blue;
+	width:200px;
+	height:250px;
+	margin:10px;
+}
+.res{
+	display:flex;
+    flex-direction:row;
+}
+.res1{
+	background-color:blue;
+	width:200px;
+	height:250px;
+	margin:10px;
+}
+#head{
+	width:100%;
+	height:50px;
+	background-color:white;
+}
+
+#reg
+{
+	background-color:skyblue;
+}
+#header{
+  height:50px;
+  background-color:grey;
+}
+#headh1{
+ text-align:center;
+ margin:auto;
+ color:white;
+ padding-top:5px;
+}
+#detail{
+ color:white;	
+}
+#nav{
+	height:50px;
+	text-align:right;
+}
+#navul li{
+	list-style-type:none;
+	display:inline;
+	padding-left:30px;
+	line-height:45px;
+}
+#navul li a{
+text-decoration:none;
+color:white;
+font-size:20px;
+}

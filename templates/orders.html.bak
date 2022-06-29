@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Orders</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styleform.css')}}">
+		<style>
+			table, th, td {
+			  border:1px solid black;
+			  text-align:center;
+			  border-collapse:collapse;
+			  margin-top:50px;
+			}
+		</style>
+	</head>
+	<body id="reg">
+		<div id="header"><h1 id="headh1">ONLINE BOOK STORE</h1></div>
+		<div class="div">
+			<table style="width:80%">
+				<tr>
+					<th>BookID</th>
+					<th>BookName</th>
+					<th>AuthorName</th>
+					<th>Price</th>
+				</tr>
+				<tr>
+					<td>{{orderdata[0]}}</td>
+					<td>{{orderdata[1]}}</td>
+					<td>{{orderdata[2]}}</td>
+					<td>{{orderdata[3]}}</td>
+				</tr>
+			</table>
+		</div>
+		<div class="div">
+			<div><a href="{{url_for('orderplaced',id=orderdata[0])}}"><button class="button">ORDER NOW</button></a></div>
+			<div><a href="\books"><button class="button">GO BACK</button></a></div>
+		</div>
+	</body>
+</html>

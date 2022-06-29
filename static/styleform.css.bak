@@ -1,0 +1,90 @@
+table{
+ margin-left:auto;
+ margin-right:auto;
+}
+th{
+	height:30px;
+	color:white;
+}
+.div{
+ display:flex;
+ flex-direction:row;
+}
+.div1{
+	width:200px;
+	height:200px;
+	margin:50px 50px 50px 50px;
+	padding-left:50px;
+	
+}
+#head{
+	width:100%;
+	height:50px;
+	background-color:white;
+}
+.userdiv{
+	display:flex;
+	flex-direction:column;
+}
+.userdiv1{
+	background-color:blue;
+	width:1320px;
+	height:250px;
+	margin:10px;
+}
+.de{
+ color:white;
+ text-align:center; 
+}
+#reg
+{
+	background-color:skyblue;
+}
+#header{
+  height:50px;
+  background-color:grey;
+}
+#headh1{
+ text-align:center;
+ margin:auto;
+ color:white;
+ padding-top:5px;
+}
+#nav{
+	height:50px;
+	text-align:right;
+}
+#navul li{
+	list-style-type:none;
+	display:inline;
+	padding-left:30px;
+	line-height:45px;
+}
+#navul li a{
+text-decoration:none;
+color:white;
+font-size:20px;
+}
+#ord{
+	text-decoration:none;
+	color:black;
+}
+#ord:hover{
+	color:red;
+}
+.button{
+	width:80%;
+	cursor:pointer;
+}
+.div2{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	margin-left:300px;
+}
+#button1{
+	width:80%;
+	cursor:pointer;
+	margin-left:500px;
+}
+	
