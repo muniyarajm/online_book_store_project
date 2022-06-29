@@ -115,7 +115,7 @@ def Authenticate2():
         cursor=db_con.cursor()
         cursor.execute("select b.bookID,b.bookName,b.authorName,count(b.bookName) as sales_count from Books b inner join Orders o on b.bookID=o.bookID group by b.bookID order by sales_count desc ")
         anldata=cursor.fetchall()
-        return render_template("analysis.html",ansdata=anldata)
+        return render_template("Analysis.html",ansdata=anldata)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
